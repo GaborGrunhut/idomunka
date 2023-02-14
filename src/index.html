@@ -1,0 +1,73 @@
+<!--
+File: index.html
+Author: Grünhut Gábor
+Copyright: 2023, Grünhut Gábor
+Group: Szoft I-1/E
+Date: 2023-02-13
+Github: https://github.com/GaborGrunhut/
+Licenc: GNU GPL
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozat_3</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container bg-success p-3 mt-5 rounded border border-2">    
+        <h1>Feladat 0357</h1>
+            <p>
+                Munkadarab eszterga általi megmunkálási idejének kiszámítása három változóból (általános esztergálási képlettel).    
+            </p>
+        
+        <div class="TurningFormula">        
+            
+            <div class="mt-3">
+                <input type="text"
+                placeholder="megmunkált darab hossza [mm]"
+                class="form-control"
+                id="pieceLength">           
+            </div>
+            
+            <div class="mt-3">
+                <input type="text"
+                placeholder="fordulatonkénti előtolás [mm]"
+                class="form-control"
+                id="ppTurn">           
+            </div>
+            
+            <div class="mt-3">
+                <input type="text"
+                placeholder="főorsó fordulatszáma [fordulat/perc]"
+                class="form-control"
+                id="spindleRPM">           
+            </div>
+
+            <div class="container2">
+                <button class="btn btn-warning mt-3" id="Button">Számol</button>
+            </div>
+
+            <div class="mt-3">
+                <label for="machTime" class="form-label">Megmunkálási idő [perc]</label>
+                <input type="text"
+                readonly
+                class="form-control"
+                id="machTime">           
+            </div>          
+        
+        </div>
+    </div>
+
+    <div id="about" class="mt-3 text-center" >
+        Grünhut Gábor - Szoft I-1/E - 2023-02-13
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
